@@ -8,7 +8,7 @@
 		$login_id = $_POST['login_id'];
 	
 		
-		$query = $conn->query("SELECT * FROM user WHERE username = 	'$username' AND password = '$password' AND user_id = '$login_id' ") or die($conn->error);
+		$query = $conn->query("SELECT * FROM users WHERE username = 	'$username' AND password = '$password' AND user_id = '$login_id' ") or die($conn->error);
 		$rows = $query->num_rows;
 		$fetch = $query->fetch_array();
 																		
@@ -23,9 +23,11 @@
 					} 
 				else if ($rows > 0)
 					{
+					$conn->query("INSERT INTO  logins(username) VALUES(' $username');") or die($conn->error);//Inserts username for tracking logs..security feature
+						
 						?>
 						<script type="text/javascript">
-						alert('Successfully loged in. Goodluck!!');
+						alert('WelCome!');
 						window.location = 'candidate.php';
 						</script>
 						<?php

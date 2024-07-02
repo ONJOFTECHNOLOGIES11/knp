@@ -65,7 +65,7 @@
                                             <td><?php echo $row ['lastname'];?></td>
                                             <td><?php echo $row ['year_level'];?></td>
                                             <td><?php echo $row ['gender'];?></td>
-                                            <td width="50"><img src="<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
+                                            <td width="50"><img src="../admin/<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
                                             
                                             <td style="text-align:center">
 											

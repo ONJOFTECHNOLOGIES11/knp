@@ -8,7 +8,7 @@
             <ul class="nav navbar-top-links navbar-right">
             
                <?php require 'dbcon.php';
-				$query = $conn->query("SELECT * from user where user_id ='$session_id'")or die (mysql_error ());
+				$query = $conn->query("SELECT * from users where user_id ='$session_id'")or die (mysql_error ());
 				
 				while ($row = $query->fetch_array()){
 				
@@ -47,9 +47,6 @@
                         </li>
                         <li>
                             <a href="user.php"> <i class = "fa fa-users" ></i> View User</a>
-                        </li>
-                        <li>
-                            <a href="login_times.php"> <i class = "fa fa-users" ></i>User Login Time</a>
                         </li>
                         <li>
                            <a href="logout.php"> <i class = "fa fa-sign-out" ></i>Logout</a>

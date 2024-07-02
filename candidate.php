@@ -18,8 +18,6 @@
 				
 				<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Add Candidate</button>
 				<?php include ('add_candidate_modal.php');?>
-                 <a href="candidate_excel.php"><button type="button" style = "margin-right:14px;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i>Export to Excel</button></a>
-                
                 <!-- /.col-lg-12 -->
 				
 				
@@ -63,7 +61,7 @@
 												while($row = $query->fetch_array()){
 													$candidate_id=$row['candidate_id'];
 										?>
-											<td width="50"><img src="<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
+											<td width="50"><img src="../admin/<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
 											<td><?php echo $row ['position'];?></td>
                                             <td><?php echo $row ['party'];?></td>
                                             <td><?php echo $row ['firstname'];?></td>

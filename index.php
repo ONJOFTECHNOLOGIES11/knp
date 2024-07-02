@@ -8,8 +8,8 @@
                     <center> 
                         <i>Login As:</i>
                         <select onchange = "page(this.value)">
-                            <option selected disables>System Admin</option>
-                            <option value = "../admin2/index.php">System User</option>
+                            <option  value = "../admin/index.php">System Admin</option>
+                            <option  selected disables>System User</option>
                             <option value = "../login.php">Student Voter</option> 
                     </select>
                         
@@ -39,7 +39,7 @@
                                 </div>
                              
                               
-                                <button class="btn btn-lg btn-success btn-block " name = "login">Login</a>
+                                <button class="btn btn-lg btn-block " name = "login" style="background-color:maroon; color: orange;">Login</a>
 							
 									<?php include ('login_query.php');?>
                         </form>

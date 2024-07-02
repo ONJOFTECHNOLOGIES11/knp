@@ -32,24 +32,22 @@
 				<option readonly>----Sort by Position----</option>
 				<option></option>
 								<option>President</option>
-								<option>CS Finance</option>
-								<option>Secretary General</option>
-								<option>Woman Representative</option>
-								<option>Governor</option>
-								<!-- <option>Treasurer</option>
+								<option>Vice President</option>
+								<option>Union Advisor</option>
+								<option>Sports Secretary</option>
+								<option>Entertainment Advisor</option>
+								<option>Treasurer</option>
 								<option>Secretary General</option>
 								<option>Vice Treasurer</option>
 								<option>Transport & Accommodation Secretary</option>
 								<option>Publicity Secretary</option>
-								<option>Academics Secretary</option> -->
+								<option>Academics Secretary</option>
 				
 			</select>
 			
 			&nbsp;
 			&nbsp;
-			<button id ="sort" class = "btn btn-success">Sort</button><button type="button" onclick="window.print();" style = "margin-right:14px;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i> Print</button>
-			<a href="excel.php"><button type="button" style = "margin-right:14px;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i>Export to Excel</button></a>
-                	
+			<button id ="sort" class = "btn btn-success">Sort</button><button type="button" onclick="window.print();" style = "margin-right:14px;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i> Print</button>	
 </form>	
                         <div class="panel-body">
                             
@@ -73,7 +71,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -85,14 +83,14 @@
 							
 			<table class="table table-striped table-bordered table-hover ">
 					<thead>
-						<td style = "width:600px;"class = "alert alert-success">Candidate for CS Finance</td>
+						<td style = "width:600px;"class = "alert alert-success">Candidate for Vice President</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
 						<td class = "alert alert-success">Total</td>
 					
 					</thead>
 					<?php
 			require 'dbcon.php';
-			$query = $conn->query("SELECT * FROM candidate WHERE position = 'CS Finance'");
+			$query = $conn->query("SELECT * FROM candidate WHERE position = 'Vice President'");
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
@@ -102,7 +100,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -113,14 +111,14 @@
 			
 			<table class="table table-striped table-bordered table-hover ">
 					<thead>
-						<td style = "width:600px;"class = "alert alert-success">Candidate for Secretary Genneral</td>
+						<td style = "width:600px;"class = "alert alert-success">Candidate for Union Advisor</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
 						<td class = "alert alert-success">Total</td>
 					
 					</thead>
 					<?php
 		require 'dbcon.php';
-		$query = $conn->query("SELECT * FROM candidate WHERE position = 'Secretary General'");
+		$query = $conn->query("SELECT * FROM candidate WHERE position = 'Union Advisor'");
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
@@ -130,7 +128,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -141,14 +139,14 @@
 						
 			<table class="table table-striped table-bordered table-hover ">
 					<thead>
-						<td style = "width:600px;"class = "alert alert-success">Candidate for Woman Representative</td>
+						<td style = "width:600px;"class = "alert alert-success">Candidate for Sports Secretary</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
 						<td class = "alert alert-success">Total</td>
 					
 					</thead>
 					<?php
 		require 'dbcon.php';
-		$query = $conn->query("SELECT * FROM candidate WHERE position = 'Woman Representative'");
+		$query = $conn->query("SELECT * FROM candidate WHERE position = 'Sports Secretary'");
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
@@ -158,7 +156,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -168,14 +166,14 @@
 							
 			<table class="table table-striped table-bordered table-hover ">
 					<thead>
-						<td style = "width:600px;"class = "alert alert-success">Candidate for Governor</td>
+						<td style = "width:600px;"class = "alert alert-success">Candidate for Entertainment Advisor</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
 						<td class = "alert alert-success">Total</td>
 					
 					</thead>
 					<?php
 		require 'dbcon.php';
-		$query = $conn->query("SELECT * FROM candidate WHERE position = 'Governor'");
+		$query = $conn->query("SELECT * FROM candidate WHERE position = 'Entertainment Advisor'");
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
@@ -185,7 +183,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -193,7 +191,7 @@
 			</table>	
 			
 							
-		<!-- <table class="table table-striped table-bordered table-hover "> -->
+			<table class="table table-striped table-bordered table-hover ">
 					<thead>
 						<td style = "width:600px;"class = "alert alert-success">Candidate for Treasurer</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
@@ -210,9 +208,9 @@
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
-				<!-- <tbody>  -->
+					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -222,7 +220,7 @@
 			
 			
 							
-		<table class="table table-striped table-bordered table-hover ">
+			<table class="table table-striped table-bordered table-hover ">
 					<thead>
 						<td style = "width:600px;"class = "alert alert-success">Candidate for Secretary General</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
@@ -241,7 +239,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -250,7 +248,7 @@
 			</table>	
 			
 							
-	<!-- <table class="table table-striped table-bordered table-hover "> -->
+			<table class="table table-striped table-bordered table-hover ">
 					<thead>
 						<td style = "width:600px;"class = "alert alert-success">Candidate for Vice Treasurer</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
@@ -267,9 +265,9 @@
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
-				<!-- <tbody>  -->
+					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -278,7 +276,7 @@
 			</table>	
 			
 							
-		<!-- <table class="table table-striped table-bordered table-hover "> -->
+			<table class="table table-striped table-bordered table-hover ">
 					<thead>
 						<td style = "width:600px;"class = "alert alert-success">Candidate for Transport & Accommodation Secretary</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
@@ -295,9 +293,9 @@
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
-				<!-- <tbody>  -->
+					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -306,7 +304,7 @@
 			</table>
 
 				
-		<!-- <table class="table table-striped table-bordered table-hover "> -->
+			<table class="table table-striped table-bordered table-hover ">
 					<thead>
 						<td style = "width:600px;"class = "alert alert-success">Candidate for Publicity Secretary</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
@@ -323,9 +321,9 @@
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
-				<!-- <tbody>  -->
+					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -337,7 +335,7 @@
 			
 
 				
-		<!-- <table class="table table-striped table-bordered table-hover "> -->
+			<table class="table table-striped table-bordered table-hover ">
 					<thead>
 						<td style = "width:600px;"class = "alert alert-success">Candidate for Academics Secretary</td>
 						<td style = "width:200px;" class = "alert alert-success">Image</td>
@@ -354,9 +352,9 @@
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
-				<!-- <tbody>  -->
+					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>

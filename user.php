@@ -13,16 +13,13 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header">System Uset List</h3>
+                    <h3 class="page-header">System Uset List</h3><p>
 					
                 </div>
-				
-				<button class="btn btn-success" data-toggle="modal" data-target="#add_user">Add User</button>
-				<?php include ('add_user_modal.php');?>
                 <!-- /.col-lg-12 -->
 			
 				
-				<hr/>
+				<hr/><br clear= all></p>
 				
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -45,8 +42,7 @@
                                             <th>Firstname</th>
                                             <th>Lastname</th>  
                                             <th>Contact</th>
-                                            <th>E-Mail</th>                                          
-                                            <th>Action</th>
+                                            <th>E-Mail</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -65,14 +61,7 @@
                                             <td><?php echo $row ['lastname'];?></td>
                                             <td><?php echo $row ['Phone']; ?></td>
                                             <td><?php echo $row ['email']; ?></td>
-                                            <td style="text-align:center">
-											
-												 <a rel="tooltip"  title="Delete" id="<?php echo $user_id ?>" href="#delete_admin<?php echo $user_id; ?>" data-target="#delete_admin" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	
-											 <?php include ('delete_user_modal.php'); ?>
-												  <a rel="tooltip"  title="Edit" id="<?php echo $row['user_id'] ?>" href="#edit_user<?php echo $row['user_id'] ?>"  data-toggle="modal"class="btn btn-success btn-outline"><i class="fa fa-pencil"></i> Edit</a>	
-												
-											</td>
-											    <?php include ('edit_user_modal.php');?>
+                                            
                                         </tr>
 										
                                        <?php } ?>
