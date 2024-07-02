@@ -1,4 +1,9 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
+<!--
+Author: Charles Kapiya Mukupa
+Year: 2018
+Profession: BSc. Information Systems Technology 
+-->
 <html lang="en">
 
 <head>
@@ -9,9 +14,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>K.N.P | Online Voting System</title>
-
-    <!-- Bootstrap Core CSS -->
+    <title>K.N.P | Voting</title>
+    <link rel="stylesheet" type="text/css" href="css/myStlyes.css">
+    <link  rel="icon" href="img/12.png">
+    	   <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Default Layout -->
@@ -24,8 +30,10 @@
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/MyStyles.css">
-
-
-</head>
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+	
+</head
+<?php
+include ('script.php');
+?>
