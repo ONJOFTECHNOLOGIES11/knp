@@ -238,7 +238,7 @@ table.dataTable thead .sorting:after {
     content: "\f0dc";
     float: right;
     font-family: fontawesome;
-    color: rgba(50,50,50,.5);
+    color: rgba(117, 60, 60, 0.5);
 }
 
 .btn-circle {
@@ -285,21 +285,21 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-green {
-    border-color: #5cb85c;
+    border-color: #691515;
 }
 
 .panel-green .panel-heading {
-    border-color: #5cb85c;
+    border-color: #b85e5c;
     color: #fff;
-    background-color: #5cb85c;
+    background-color: #b85c5c;
 }
 
 .panel-green a {
-    color: #5cb85c;
+    color: #b85c5c;
 }
 
 .panel-green a:hover {
-    color: #3d8b3d;
+    color: #8b3d3d;
 }
 
 .panel-red {
