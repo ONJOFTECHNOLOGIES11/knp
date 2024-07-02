@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<!--
-Author: Charles Kapiya Mukupa
-Contact Detailes: 0979 - 848064
-Email: charlesmukupa@gmail.com
-Date: 15 - 08 - 2018
-Fina Year Project - Information Systems Technology
-University Of Lusaka 
-Online Voting System
-
--->
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,10 +9,9 @@ Online Voting System
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>  Voting | Register</title>
+    <title>K.N.P | Online Voting</title>
 
-    <link rel="stylesheet" type="text/css" href="css/Mystlyes.css">
-    	   <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Default Layout -->
@@ -35,7 +24,8 @@ Online Voting System
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+    <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/MyStyles.css">
+
 
 </head>
